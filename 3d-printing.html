@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#082a22">
+  <meta name="description" content="รู้จักการพิมพ์สามมิติ: แนวคิดพื้นฐาน ขั้นตอน วัสดุ การใช้งาน และอนาคต">
+  <title>3D Printing — Presentation</title>
+  <link rel="stylesheet" href="3d-printing.css?v=1">
+</head>
+<body>
+  <main class="deck" id="deck" aria-label="สไลด์นำเสนอ 3D Printing จำนวน 8 หน้า">
+    <section class="slide" aria-label="สไลด์ 1 จาก 8: 3D Printing"><img src="3dp-slide-01.jpg" alt="3D Printing — รู้จักการพิมพ์สามมิติ ตั้งแต่แนวคิดพื้นฐาน ขั้นตอน วัสดุ การใช้งาน และอนาคต"></section>
+    <section class="slide" aria-label="สไลด์ 2 จาก 8: 3D Printing คืออะไร"><img src="3dp-slide-02.jpg" alt="พื้นฐานการพิมพ์สามมิติ: สร้างวัตถุจริงจากไฟล์ดิจิทัลโดยเติมวัสดุทีละชั้น"></section>
+    <section class="slide" aria-label="สไลด์ 3 จาก 8: Workflow"><img src="3dp-slide-03.jpg" alt="Workflow 3 ขั้นตอน: ออกแบบโมเดล 3 มิติ หั่นไฟล์เป็นชั้น และพิมพ์ชิ้นงาน"></section>
+    <section class="slide" aria-label="สไลด์ 4 จาก 8: วัสดุหลัก"><img src="3dp-slide-04.jpg" alt="วัสดุหลัก 2 กลุ่ม: พลาสติก FDM และเรซิน SLA"></section>
+    <section class="slide" aria-label="สไลด์ 5 จาก 8: ตัวอย่างการใช้งานใกล้ตัว"><img src="3dp-slide-05.jpg" alt="ตัวอย่าง 3D Printing: ของเล่นและของตกแต่ง ชิ้นส่วนที่หาซื้อยาก และโมเดลสถาปัตยกรรม"></section>
+    <section class="slide" aria-label="สไลด์ 6 จาก 8: การประยุกต์ใช้ทางการแพทย์"><img src="3dp-slide-06.jpg" alt="การใช้ 3D Printing ทางการแพทย์: อวัยวะเทียม โมเดลก่อนผ่าตัด และการฝึกอบรม"></section>
+    <section class="slide" aria-label="สไลด์ 7 จาก 8: ข้อดีและข้อจำกัด"><img src="3dp-slide-07.jpg" alt="มุมมองที่สมดุล: ข้อดีและข้อจำกัดของ 3D Printing"></section>
+    <section class="slide" aria-label="สไลด์ 8 จาก 8: อนาคตของ 3D Printing"><img src="3dp-slide-08.jpg" alt="อนาคต: เครื่องมือสร้างสรรค์สำหรับทุกคน ด้วยการทดลอง ทักษะ และการสร้างสรรค์จากโต๊ะทำงาน"></section>
+  </main>
+  <nav class="presentation-controls" aria-label="ตัวควบคุมสไลด์">
+    <button class="control-button" id="previous" type="button" aria-label="สไลด์ก่อนหน้า">←</button>
+    <span class="slide-count" aria-live="polite"><span id="current-slide">01</span><span class="count-divider">/</span>08</span>
+    <div class="slide-dots" aria-label="เลือกหน้า">
+      <button type="button" data-slide="0" aria-label="ไปสไลด์ 1" aria-current="true"></button><button type="button" data-slide="1" aria-label="ไปสไลด์ 2"></button><button type="button" data-slide="2" aria-label="ไปสไลด์ 3"></button><button type="button" data-slide="3" aria-label="ไปสไลด์ 4"></button><button type="button" data-slide="4" aria-label="ไปสไลด์ 5"></button><button type="button" data-slide="5" aria-label="ไปสไลด์ 6"></button><button type="button" data-slide="6" aria-label="ไปสไลด์ 7"></button><button type="button" data-slide="7" aria-label="ไปสไลด์ 8"></button>
+    </div>
+    <button class="control-button" id="next" type="button" aria-label="สไลด์ถัดไป">→</button>
+    <a class="control-button pdf-link" href="3D-Printing.pdf" target="_blank" rel="noopener" aria-label="เปิด PDF ต้นฉบับ" title="เปิด PDF ต้นฉบับ">PDF</a>
+    <button class="control-button fullscreen-button" id="fullscreen" type="button" aria-label="เต็มหน้าจอ">⛶</button>
+  </nav>
+  <p class="keyboard-hint">ใช้ปุ่ม ← → เพื่อเปลี่ยนสไลด์</p>
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const dots = [...document.querySelectorAll('[data-slide]')];
+      const counter = document.getElementById('current-slide');
+      let active = 0;
+      const update = (index, behavior = 'smooth') => {
+        active = Math.max(0, Math.min(slides.length - 1, index));
+        slides[active].scrollIntoView({ behavior, block: 'nearest', inline: 'start' });
+        counter.textContent = String(active + 1).padStart(2, '0');
+        dots.forEach((dot, i) => { if (i === active) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+      };
+      document.getElementById('previous').addEventListener('click', () => update(active - 1));
+      document.getElementById('next').addEventListener('click', () => update(active + 1));
+      dots.forEach((dot) => dot.addEventListener('click', () => update(Number(dot.dataset.slide))));
+      document.getElementById('fullscreen').addEventListener('click', () => {
+        if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+        else document.exitFullscreen?.();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); update(active + 1); }
+        if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); update(active - 1); }
+        if (event.key === 'Home') update(0);
+        if (event.key === 'End') update(slides.length - 1);
+      });
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        active = slides.indexOf(visible.target);
+        counter.textContent = String(active + 1).padStart(2, '0');
+        dots.forEach((dot, i) => { if (i === active) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
+      }, { threshold: [0.55, 0.8] });
+      slides.forEach((slide) => observer.observe(slide));
+    })();
+  </script>
+</body>
+</html>
