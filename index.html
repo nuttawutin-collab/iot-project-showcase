@@ -3,41 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="หน้าแนะนำโปรเจกต์ IoT พร้อมเผยแพร่ผ่าน GitHub Pages">
-  <title>IoT Project | Project Showcase</title>
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="IoT คืออะไร สำหรับคนไม่เคยเข้าใจมาก่อน — จากอุปกรณ์ใกล้ตัวสู่เมืองอัจฉริยะ พร้อมเข้าใจเรื่องความปลอดภัยและความเป็นส่วนตัว">
+  <title>IoT คืออะไร? — สำหรับคนไม่เคยเข้าใจมาก่อน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="IoT Project หน้าหลัก"><span class="brand-mark">I</span> IoT Project</a>
-    <nav aria-label="เมนูหลัก">
-      <a href="#about">เกี่ยวกับ</a><a href="#highlights">จุดเด่น</a><a href="#contact">ติดต่อ</a>
-    </nav>
-  </header>
-  <main id="home">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">INTERNET OF THINGS · PROJECT SHOWCASE</p>
-        <h1>เชื่อมต่อโลกจริง<br><span>ด้วยเทคโนโลยี IoT</span></h1>
-        <p class="intro">พื้นที่นำเสนอแนวคิดและผลงาน IoT ของเรา ตั้งแต่การเก็บข้อมูลจากอุปกรณ์ ไปจนถึงการนำข้อมูลมาใช้ให้เกิดประโยชน์</p>
-        <a class="button" href="#about">สำรวจโปรเจกต์ <span aria-hidden="true">→</span></a>
-      </div>
-      <div class="visual" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="chip">IoT<span>CONNECTED</span></div><i class="node node-a"></i><i class="node node-b"></i><i class="node node-c"></i></div>
+  <header class="topbar"><a class="wordmark" href="#home"><span class="wordmark__dot"></span> IOT / MADE SIMPLE</a><nav aria-label="เมนูเนื้อหา"><a href="#idea">IoT คืออะไร</a><a href="#around-us">ตัวอย่าง</a><a href="#safety">ความปลอดภัย</a></nav><a class="topbar__index" href="#summary">01—08 <span>↘</span></a></header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__copy"><p class="kicker"><span>คู่มือเริ่มต้น</span> · INTERNET OF THINGS</p><h1>IoT<br>คือ<span class="accent">อะไร</span><span class="question">?</span></h1><p class="hero__sub">สำหรับคนไม่เคยเข้าใจมาก่อน</p><div class="hero__byline"><span class="byline__rule"></span><span>จัดทำโดย <b>IET28/1 · นายณัฐวุฒิ อินาวา</b></span></div><a class="scroll-cue" href="#idea"><span class="scroll-cue__icon">↓</span> เลื่อนลงเพื่อเริ่มทำความเข้าใจ</a></div>
+      <div class="hero-art" aria-hidden="true"><div class="hero-art__halo halo-a"></div><div class="hero-art__halo halo-b"></div><div class="hero-art__earth"><span class="earth__label">โลกจริง</span><span class="earth__signal">⌁</span></div><span class="satellite sat-a">⌁</span><span class="satellite sat-b">✳</span><span class="satellite sat-c">+</span><span class="art-caption">EVERYDAY THINGS<br>CONNECTED</span></div>
+      <span class="hero__page">01 <i>/</i> 08</span>
     </section>
-    <section class="section about" id="about">
-      <p class="eyebrow">ABOUT THE PROJECT</p><h2>เทคโนโลยีที่ทำงานร่วมกัน</h2>
-      <p class="section-copy">โปรเจกต์นี้นำเสนอแนวทางการใช้ Internet of Things เพื่อเชื่อมโยงอุปกรณ์และข้อมูลเข้าด้วยกัน คุณสามารถแก้ไขส่วนนี้ให้ตรงกับรายละเอียดจริงจากเอกสารโครงงานของคุณ</p>
-    </section>
-    <section class="section highlights" id="highlights">
-      <p class="eyebrow">PROJECT HIGHLIGHTS</p><h2>ภาพรวมการทำงาน</h2>
-      <div class="cards">
-        <article class="card"><span class="card-number">01</span><h3>เก็บข้อมูล</h3><p>อุปกรณ์และเซนเซอร์รวบรวมข้อมูลจากสภาพแวดล้อมหรือกระบวนการที่สนใจ</p></article>
-        <article class="card"><span class="card-number">02</span><h3>เชื่อมต่อ</h3><p>ส่งผ่านข้อมูลด้วยเครือข่าย เพื่อให้ระบบประมวลผลและสื่อสารกันได้</p></article>
-        <article class="card"><span class="card-number">03</span><h3>นำไปใช้</h3><p>แสดงผลและต่อยอดข้อมูลเป็นเครื่องมือช่วยติดตามหรือประกอบการตัดสินใจ</p></article>
-      </div>
-    </section>
-    <section class="contact" id="contact"><p class="eyebrow">LET'S CONNECT</p><h2>สนใจโปรเจกต์นี้ไหม?</h2><p>เพิ่มชื่อทีม อีเมล หรือลิงก์ผลงานของคุณในส่วนนี้</p><a href="https://github.com/" class="button button-light">ดูโปรเจกต์บน GitHub <span aria-hidden="true">↗</span></a></section>
+
+    <section class="chapter chapter--blue" id="idea"><div class="chapter__head"><p class="kicker">02 <span>·</span> THE SIMPLE IDEA</p><span class="chapter__note">เริ่มจากภาพง่าย ๆ</span></div><div class="chapter__intro"><h2>สิ่งของที่<span class="accent">เชื่อมต่อ</span><br>อินเทอร์เน็ต</h2><p>อุปกรณ์รับรู้สิ่งรอบตัว ส่งข้อมูล และรับคำสั่งจากเราได้</p></div>
+      <div class="flow" aria-label="อุปกรณ์รับข้อมูล ส่งผ่านอินเทอร์เน็ต และให้ผู้ใช้ดูหรือสั่งงาน"><article class="flow-card"><div class="flow-visual"><span class="sensor-ring"></span><span class="sensor-dot"></span></div><span class="flow-card__num">01 / SENSE</span><h3>สิ่งของหรืออุปกรณ์</h3><p>รับรู้ข้อมูลจากโลกจริง เช่น อุณหภูมิ การเคลื่อนไหว หรือชีพจร</p></article><span class="flow-link" aria-hidden="true">→</span><article class="flow-card flow-card--internet"><div class="flow-visual"><span class="wifi wifi-one">⌁</span><span class="wifi wifi-two">⌁</span><span class="wifi__dot"></span></div><span class="flow-card__num">02 / CONNECT</span><h3>อินเทอร์เน็ต</h3><p>ส่งข้อมูลไปยังระบบ และนำคำสั่งกลับมาที่อุปกรณ์</p></article><span class="flow-link" aria-hidden="true">→</span><article class="flow-card"><div class="flow-visual"><span class="user-device"><i></i><b></b></span></div><span class="flow-card__num">03 / RESPOND</span><h3>ข้อมูลและการสั่งงาน</h3><p>ผู้ใช้ดูข้อมูลหรือสั่งงานได้จากระยะไกล</p></article></div>
+      <p class="chapter__footnote">อุปกรณ์รับรู้ <span>→</span> อินเทอร์เน็ตเชื่อมข้อมูล <span>→</span> ระบบช่วยให้เราตัดสินใจหรือสั่งงาน</p><span class="chapter__page">02 / 08</span></section>
+
+    <section class="chapter chapter--cream" id="around-us"><div class="chapter__head"><p class="kicker">03 <span>·</span> EVERYDAY OBJECTS</p><span class="chapter__note">ตัวอย่างรอบตัวเรา</span></div><div class="chapter__intro chapter__intro--wide"><h2>IoT อยู่ใกล้ตัว<br>กว่าที่<span class="accent">คิด</span></h2><p>หลายอุปกรณ์ที่เราใช้ทุกวันกำลังรับข้อมูลและตอบสนอง ลองสังเกตอุปกรณ์ที่เชื่อมต่อกับโทรศัพท์หรืออินเทอร์เน็ตในชีวิตประจำวัน</p></div>
+      <div class="object-grid"><article class="object-card object-card--watch"><div class="device device--watch"><span class="watch-strap"></span><span class="watch-face"><i>♥</i><b>72</b><small>BPM</small></span></div><div class="object-card__text"><span class="object-card__tag">WEARABLE</span><h3>Smart Watch</h3><p>วัดชีพจร นับก้าว และแจ้งเตือนจากโทรศัพท์</p></div><span class="object-card__index">A</span></article><article class="object-card object-card--speaker"><div class="device device--speaker"><span class="speaker-dot"></span><span class="speaker-glow"></span><i>⌁</i></div><div class="object-card__text"><span class="object-card__tag">VOICE ASSISTANT</span><h3>Smart Speaker</h3><p>รับคำสั่งเสียง เปิดเพลง ตอบคำถาม และควบคุมอุปกรณ์อื่น</p></div><span class="object-card__index">B</span></article></div><p class="chapter__aside">เทคโนโลยีที่เชื่อมกับเรา อาจอยู่บนข้อมือหรือในห้องนั่งเล่น</p><span class="chapter__page">03 / 08</span></section>
+
+    <section class="chapter chapter--green" id="smart-home"><div class="chapter__head"><p class="kicker">04 <span>·</span> CONNECTED HOME</p><span class="chapter__note">บ้านที่ตอบสนองเราได้</span></div><div class="chapter__intro chapter__intro--wide"><div><h2>ยินดีต้อนรับ<br>สู่ <span class="accent">Smart Home</span></h2><p>ของใช้ในบ้านรับคำสั่งและส่งข้อมูลกลับมา ช่วยให้เราดูแลบ้านได้ แม้ไม่ได้อยู่ตรงนั้น</p></div><div class="home-window" aria-hidden="true"><span class="window-sun"></span><span class="window-house"><i></i><b></b></span></div></div><div class="home-list"><article class="home-item"><span class="home-item__icon bulb"><i></i></span><div><span class="home-item__type">LIGHTING</span><h3>หลอดไฟ</h3><p>เปิด ปิด และปรับความสว่างผ่านแอป</p></div><span class="home-item__arrow">↗</span></article><article class="home-item"><span class="home-item__icon camera"><i></i></span><div><span class="home-item__type">SECURITY</span><h3>กล้องวงจรปิด</h3><p>ดูภาพและรับการแจ้งเตือนจากที่ไหนก็ได้</p></div><span class="home-item__arrow">↗</span></article><article class="home-item"><span class="home-item__icon fridge"><i></i></span><div><span class="home-item__type">APPLIANCE</span><h3>ตู้เย็น</h3><p>ตรวจอุณหภูมิและช่วยติดตามอาหาร</p></div><span class="home-item__arrow">↗</span></article></div><span class="chapter__page">04 / 08</span></section>
+
+    <section class="chapter chapter--dark" id="benefits"><div class="chapter__head"><p class="kicker">05 <span>·</span> WHY IT HELPS</p><span class="chapter__note">ประโยชน์ที่สัมผัสได้</span></div><div class="chapter__intro chapter__intro--wide"><h2>ชีวิตสะดวกขึ้น<br>ใช้พลังงาน<span class="accent">คุ้มขึ้น</span></h2><p>เมื่ออุปกรณ์รับรู้สถานการณ์ ระบบก็ช่วยทำงานแทนเราได้มากขึ้น</p></div><div class="benefit-list"><article class="benefit"><span class="benefit__icon">↗</span><div><span class="benefit__tag">ANYWHERE</span><h3>สั่งงานจากทุกที่</h3><p>สั่งงานอุปกรณ์ได้จากทุกที่ ลดขั้นตอนที่ต้องทำเอง</p></div><span class="benefit__number">01</span></article><article class="benefit"><span class="benefit__icon">◷</span><div><span class="benefit__tag">AUTOMATION</span><h3>ทำงานตามเงื่อนไข</h3><p>ระบบทำงานตามเวลา คน หรือตามเงื่อนไขที่กำหนด</p></div><span class="benefit__number">02</span></article><article class="benefit"><span class="benefit__icon">⌁</span><div><span class="benefit__tag">EFFICIENCY</span><h3>ใช้พลังงานพอดี</h3><p>เซนเซอร์ช่วยปิดอุปกรณ์ที่ไม่ได้ใช้ ลดการใช้พลังงานเกินจำเป็น</p></div><span class="benefit__number">03</span></article></div><span class="chapter__page">05 / 08</span></section>
+
+    <section class="chapter chapter--city" id="smart-city"><div class="chapter__head"><p class="kicker">06 <span>·</span> BEYOND THE HOME</p><span class="chapter__note">เมื่อ IoT ขยายจากบ้านสู่เมือง</span></div><div class="city-layout"><div class="city-copy"><h2>เมืองที่<br><span class="accent">คิดและตอบสนอง</span></h2><p>ข้อมูลแบบเรียลไทม์ช่วยให้เมืองบริหารทรัพยากรได้ดีขึ้น</p><div class="city-facts"><article><span class="city-facts__num">01</span><div><h3>ไฟจราจรอัจฉริยะ</h3><p>ปรับจังหวะตามปริมาณรถ</p></div></article><article><span class="city-facts__num">02</span><div><h3>เซนเซอร์ในเมือง</h3><p>ติดตามที่จอดรถ คุณภาพอากาศ และการใช้พลังงาน</p></div></article></div></div><div class="city-art" aria-hidden="true"><span class="city-art__sun"></span><span class="city-art__signal signal-1">⌁</span><span class="city-art__signal signal-2">⌁</span><div class="building building-a"><i></i><i></i><i></i><b></b></div><div class="building building-b"><i></i><i></i><i></i><i></i><b></b></div><div class="building building-c"><i></i><i></i><b></b></div><div class="city-road"><span class="road-line"></span><span class="road-dot"></span></div><span class="city-art__label">CONNECTED<br>URBAN LIFE</span></div></div><span class="chapter__page">06 / 08</span></section>
+
+    <section class="chapter chapter--safety" id="safety"><div class="chapter__head"><p class="kicker">07 <span>·</span> CONNECT WITH CARE</p><span class="chapter__note">ก่อนเชื่อมต่ออุปกรณ์</span></div><div class="chapter__intro chapter__intro--wide"><h2>ความสะดวกควรมาพร้อม<br><span class="accent">การดูแล</span></h2><p>ยิ่งเชื่อมต่อมาก ยิ่งต้องใส่ใจความปลอดภัยและข้อมูลส่วนตัว</p></div><div class="safety-grid"><article class="safety-card"><div class="safety-card__top"><span class="safety-card__icon">⌑</span><span class="safety-card__tag">SECURITY</span></div><h3>ความปลอดภัย</h3><p class="safety-card__question">ป้องกันไม่ให้คนอื่นเข้าถึงอุปกรณ์และข้อมูลส่วนตัว</p><ul><li>ตั้งรหัสผ่านที่เดายาก</li><li>อัปเดตระบบอยู่เสมอ</li><li>เลือกอุปกรณ์ที่น่าเชื่อถือ</li><li>ดูแลบัญชี อุปกรณ์ และเครือข่ายให้ดี</li></ul></article><article class="safety-card safety-card--privacy"><div class="safety-card__top"><span class="safety-card__icon">◉</span><span class="safety-card__tag">PRIVACY</span></div><h3>ความเป็นส่วนตัว</h3><p class="safety-card__question">รู้ว่าข้อมูลของเราไปที่ไหน และถูกนำไปใช้อย่างไร</p><ul><li>รู้ว่าอุปกรณ์เก็บข้อมูลอะไร</li><li>ตรวจสอบว่าใครเข้าถึงได้</li><li>ทำความเข้าใจการใช้ข้อมูล</li><li>เลือกเปิดเฉพาะข้อมูลที่จำเป็น</li></ul></article></div><span class="chapter__page">07 / 08</span></section>
+
+    <section class="summary" id="summary"><div class="chapter__head"><p class="kicker">08 <span>·</span> ONE SENTENCE SUMMARY</p><span class="chapter__note">ภาพรวมในประโยคเดียว</span></div><div class="summary__content"><div><p class="summary__eyebrow">INTERNET OF THINGS</p><h2>เชื่อมต่อเพื่อ<br>ชีวิตที่<span class="accent">ดีขึ้น</span></h2><p class="summary__future">เริ่มใช้โดยเลือกอุปกรณ์ที่จำเป็น<br>รักษาความปลอดภัย และใส่ใจความเป็นส่วนตัว</p></div><div class="summary-graphic" aria-hidden="true"><span class="summary-graphic__ring ring-1"></span><span class="summary-graphic__ring ring-2"></span><div class="summary-graphic__core">IoT</div><span class="summary-graphic__node node-1">สิ่งของ</span><span class="summary-graphic__node node-2">ข้อมูล</span><span class="summary-graphic__node node-3">การสั่งงาน</span></div></div><p class="summary__definition">สิ่งของรับรู้ข้อมูล <span>→</span> อินเทอร์เน็ตเชื่อมข้อมูล <span>→</span> ระบบช่วยให้เราตัดสินใจหรือสั่งงานได้ฉลาดขึ้น</p><footer class="site-footer"><span>IOT / MADE SIMPLE</span><span>จัดทำโดย IET28/1 · นายณัฐวุฒิ อินาวา</span><a href="#home">กลับขึ้นด้านบน ↑</a></footer></section>
   </main>
-  <footer><span>© 2026 IoT Project</span><span>สร้างด้วย HTML &amp; CSS</span></footer>
 </body>
 </html>
